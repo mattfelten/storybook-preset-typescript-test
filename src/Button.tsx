@@ -17,3 +17,5 @@ export const Button: React.FC<ButtonProps> = ({
 
 	return <div className={classes} {...props} />;
 }
+
+Button.displayName = "Button";
