@@ -1,14 +1,18 @@
 import React from 'react';
 
 interface ButtonProps {
-	/** Make Button primary */
-	primary?: boolean;
-
 	/** Content of Button */
 	children: any;
+
+	/** Button styles */
+	fill?: 'solid' | 'outline';
+
+	/** Make Button primary */
+	primary?: boolean;
 }
 
 export const Button: React.FC<ButtonProps> = ({
+	fill = 'solid',
 	primary,
 	...props
 }) => {
