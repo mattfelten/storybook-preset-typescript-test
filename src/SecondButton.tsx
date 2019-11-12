@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 interface ButtonProps {
 	/** Content of Button */
@@ -11,7 +11,7 @@ interface ButtonProps {
 	primary?: boolean;
 }
 
-export class SecondButton extends React.Component<ButtonProps> {
+export class SecondButton extends Component<ButtonProps> {
 	static defaultProps = {
 		fill: 'solid',
 	};

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 interface ButtonProps {
 	/** Content of Button */
@@ -11,7 +11,7 @@ interface ButtonProps {
 	primary?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button: FC<ButtonProps> = ({
 	fill = 'solid',
 	primary,
 	...props
